@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель управления - Система для сотрудников</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard">
+            <header class="dashboard-header">
+                <h1>Добро пожаловать, <span id="userName"></span>!</h1>
+                <button id="logoutBtn" class="btn-logout">Выйти</button>
+            </header>
+            <div class="dashboard-content">
+                <div class="card">
+                    <h2>🎉 Вы успешно авторизованы</h2>
+                    <p>Это защищенная страница для сотрудников компании.</p>
+                </div>
+                <div class="card">
+                    <h3>Информация о системе</h3>
+                    <ul>
+                        <li>Статус: Активен</li>
+                        <li>Последний вход: <span id="loginTime"></span></li>
+                        <li>Ваш логин: <span id="userLogin"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
